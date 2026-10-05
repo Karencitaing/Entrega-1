@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <style>
+    .nodo { transform-box: fill-box; transform-origin: center; animation: latir 2.5s ease-in-out infinite; }
+    .n2 { animation-delay: .5s; } .n3 { animation-delay: 1s; } .n4 { animation-delay: 1.5s; } .n5 { animation-delay: 2s; }
+    .dato { stroke-dasharray: 10 200; animation: viajar 3s linear infinite; }
+    @keyframes latir { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.25); } }
+    @keyframes viajar { from { stroke-dashoffset: 210; } to { stroke-dashoffset: 0; } }
+  </style>
+  <g stroke="#d1d1d6" stroke-width="2">
+    <line x1="200" y1="150" x2="70" y2="60"/><line x1="200" y1="150" x2="330" y2="60"/>
+    <line x1="200" y1="150" x2="70" y2="240"/><line x1="200" y1="150" x2="330" y2="240"/>
+    <line x1="70" y1="60" x2="330" y2="60"/><line x1="70" y1="240" x2="330" y2="240"/>
+  </g>
+  <g stroke="#34c759" stroke-width="4" stroke-linecap="round">
+    <line class="dato" x1="70" y1="60" x2="200" y2="150"/><line class="dato" x1="330" y1="240" x2="200" y2="150" style="animation-delay:1s"/>
+    <line class="dato" x1="70" y1="240" x2="330" y2="240" style="animation-delay:2s"/>
+  </g>
+  <circle class="nodo n1" cx="200" cy="150" r="26" fill="#248a3d"/>
+  <circle class="nodo n2" cx="70" cy="60" r="16" fill="#30d158"/>
+  <circle class="nodo n3" cx="330" cy="60" r="16" fill="#30d158"/>
+  <circle class="nodo n4" cx="70" cy="240" r="16" fill="#63e6be"/>
+  <circle class="nodo n5" cx="330" cy="240" r="16" fill="#63e6be"/>
+</svg>
